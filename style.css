@@ -1,0 +1,450 @@
+
+#cursor {
+    display: inline-block;
+    width: 15px;
+    height: 3px;
+    background-color: #149414;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .blinking-greater-than {
+    display: inline-block;
+    animation: blink 1s infinite; /* Adjust the animation duration as needed */
+  }
+
+body {
+    scroll-behavior: smooth;
+    margin: 40px;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace !important;
+    background-image: url('images/C.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #149414;
+    height: 200vh; /* Example content that extends beyond the viewport height */
+    background-color: #f0f0f0;
+
+}
+
+#name {
+    font-size: 80px;
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+#des {
+    color: white;
+    line-height: 1.5; /* Improved line height for better readability */
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+@media screen and (max-width: 768px) {
+    #des {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #des {
+        font-size: 14px; /* Further adjust font size for smaller screens */
+    }
+    
+}
+
+#occ {
+    font-size: 30px;
+}
+
+#table1 {
+    width: 100%;
+}
+
+/* Your existing styles for the horizontal table */
+#table1 {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#table1 th {
+  text-align: left;
+  padding: 8px;
+}
+
+/* Your existing styles for the horizontal table */
+#table1 {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#table1 th {
+  text-align: left;
+  padding: 8px;
+}
+
+/* Media query for portrait mode */
+@media (max-width: 600px) {
+  #table1 {
+    display: block;
+    width: 100%;
+  }
+
+  #table1 th {
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px; /* Adjust the padding for more space */
+    margin-bottom: 10px; /* Add margin between columns */
+  }
+}
+
+
+
+.rounded-box {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #404040;
+    color: #149414;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace !important;
+    
+}
+
+.upper-segment {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #272727;
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+.lower-segment {
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+
+#mulm{
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    font-family: 'Source Code Pro', monospace !important;
+}
+.word {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-family: 'Source Code Pro', monospace !important;
+}
+.vertical-space {
+    margin-bottom: 250px; /* Adjust the value as needed */
+}
+
+#top{
+    font-size: xx-large;
+}
+
+#co{
+    font-size: 20px;
+    color: white;
+}
+
+#table2{
+    margin: auto;
+    width: 50%;
+}
+
+
+
+
+
+/* Default link styles */
+#table1 a {
+    color: #149414; /* Color before clicking */
+    position: relative; /* Position relative for proper positioning of the overlay */
+    text-decoration: none; /* Remove underline by default */
+  }
+  
+  /* Visited link styles */
+  #table1 a:visited {
+    color: #149414; /* Color after clicking */
+  }
+  
+  /* Overlay styles for hover */
+  #table1 a::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Center the overlay vertically */
+    left: 50%; /* Center the overlay horizontally */
+    transform: translate(-50%, -50%); /* Center the overlay precisely */
+    width: 150%; /* Adjust the width as needed */
+    height: 150%; /* Adjust the height as needed */
+    background-color: rgba(255, 255, 255, 0.2); /* Lightly transparent white overlay */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+    border-radius: 10px; /* Border radius for rounded corners */
+    text-align: center; /* Center the text within the box */
+    display: flex; /* Use flexbox for better centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Style for link text within the box */
+  #table1 a span {
+    display: inline-block;
+    padding: 10px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for the link text */
+    border-radius: 5px; /* Border radius for rounded corners */
+  }
+  
+  /* Hovered link styles */
+  #table1 a:hover span {
+    color: darkgreen; /* Color when hovering */
+  }
+  
+  /* Show overlay on hover */
+  #table1 a:hover::before {
+    opacity: 1;
+  }
+  
+  
+
+
+
+
+  .scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000; /* Set a higher z-index to make sure it's above other elements */
+}
+
+.scroll-to-top-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.scroll-to-top-btn:hover {
+    opacity: 0.8; /* Adjust the opacity on hover as needed */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    margin-left: -40px; /* Counteract the body margin */
+    margin-right: -40px; /* Counteract the body margin */
+    z-index: 999; /* Set a lower z-index than the button to ensure it's below the button */
+}
+
+  
+  
+  
+
+.button1 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.button1:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed for the desired enlargement */
+}
+
+.button1 img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+  
+
+
+
+
+
+
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container while maintaining its aspect ratio */
+}
+
+
+.skills .section-title { margin-block-end: 20px; }
+
+.skills .section-text { margin-block-end: 70px; }
+
+.skills-list {
+  display: grid;
+  gap: 25px;
+}
+
+.skills-item .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
+.skills-title,
+.skills-data {
+  color: #149414;
+  font-size: 1.1rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.skills-progress-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skills-progress {
+  background-color:  #149414;
+  height: 100%;
+  border-radius: inherit;
+}
+
+
+
+.contact-card {
+  background-color: rgba(30, 30, 30, 0.9); /* Adjust the alpha value as needed */
+  padding: 50px 25px;
+  border-radius: 20px;
+  width: inherit;
+}
+  
+  .contact-card .card-subtitle {
+    color:  #000000;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .contact .section-title {
+    text-align: left;
+    margin-block-end: 30px;
+  }
+  
+  .contact-form { margin-block-end: 50px; }
+  
+  .contact-input {
+    background-color: rgba(51, 51, 51, 0.2); /* Adjust the alpha value as needed */
+    color: #149414;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    margin-block-end: 15px;
+  }
+  
+  .contact-input::placeholder { color: #149414; }
+  
+  textarea.contact-input {
+    resize: vertical;
+    min-height: 100px;
+    height: 170px;
+    max-height: 300px;
+  }
+  
+  .btn-submit {
+    background-color:  #333;
+    color: #149414;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    width: 20%;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.25s ease;
+  }
+  
+  .btn-submit:is(:hover, :focus) {
+    background-color: #1e1e1e;
+    color: #149414;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .contact-item:not(:last-child) { margin-block-end: 20px; }
+  
+  
+  .contact-item-title {
+    color: #1e1e1e;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .contact-item-link { transition: 0.05s ease; }
+  
+  .contact-item-link:not(address):is(:hover, :focus) { color: #333; }
+  
+  
+
+ 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.skills-progress {
+  background: linear-gradient(90deg, #014306 , #58da67 , #149414 , #026324 , #4cc513 ) ;
+  background-size: 200% 100%;
+  animation: gradientMove 5s ease infinite;
+  height: 100%;
+  border-radius: inherit;
+}
+
