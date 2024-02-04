@@ -394,7 +394,7 @@ footer {
     color: #149414;
     font-family: 'Barlow', sans-serif;
     font-size: 1.1rem;
-    width: 30%;
+    width: inherit;
     padding: 10px;
     border-radius: 50px;
     transition: 0.25s ease;
